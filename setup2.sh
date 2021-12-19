@@ -185,9 +185,9 @@ socket = a:SO_REUSEADDR=1
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
-[stunnelws]
-accept = 443
-connect = 127.0.0.1:8880
+#[stunnelws]
+#accept = 443
+#connect = 127.0.0.1:8880
 
 [dropbear]
 accept = 445
@@ -329,6 +329,9 @@ wget -O v2raay "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/v2r
 wget -O ssh "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/ssh.sh"
 wget -O sstpp "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/sstpp.sh"
 wget -O ssssr "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/ssssr.sh"
+wget -O cff "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/cff.sh"
+wget -O cfd "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/cfd.sh"
+wget -O cfh "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/cfh.sh"
 wget -O backup "https://raw.githubusercontent.com/kevindoni/SC/main/backup.sh"
 wget -O autobackup "https://raw.githubusercontent.com/kevindoni/SC/main/autobackup.sh"
 wget -O rclone "https://raw.githubusercontent.com/kevindoni/SC/main/rclone.conf"
@@ -374,6 +377,9 @@ chmod +x v2raay
 chmod +x ssh
 chmod +x sstpp
 chmod +x ssssr
+chmod +x cff
+chmod +x cfd
+chmod +x cfh
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 # remove unnecessary files
@@ -421,6 +427,12 @@ clear
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 wget https://raw.githubusercontent.com/kevindoni/SC/main/cf.sh && chmod +x cf.sh && ./cf.sh
+#install Add ID Cloudflare
+wget https://raw.githubusercontent.com/kevindoni/SC/main/cff.sh && chmod +x cff.sh && ./cff.sh
+#install Cloudflare Add-Ons
+wget https://raw.githubusercontent.com/kevindoni/SC/main/cfd.sh && chmod +x cfd.sh && ./cfd.sh
+#install Pointing BUG
+wget https://raw.githubusercontent.com/kevindoni/SC/main/cfh.sh && chmod +x cfh.sh && ./cfh.sh
 #install sstp
 wget https://raw.githubusercontent.com/kevindoni/SC/main/sstp.sh && chmod +x sstp.sh && ./sstp.sh
 #install ssr
@@ -437,6 +449,9 @@ wget https://raw.githubusercontent.com/kevindoni/SC/main/set-br.sh && chmod +x s
 wget https://raw.githubusercontent.com/kevindoni/SC/main/edu.sh && chmod +x edu.sh && ./edu.sh
 wget https://raw.githubusercontent.com/kevindoni/SC/main/websocket-python/websocket.sh && chmod +x websocket.sh && ./websocket.sh
 rm -f /root/ssh-vpn.sh
+rm -f /root/cff.sh
+rm -f /root/cfd.sh
+rm -f /root/cfh.sh
 rm -f /root/sstp.sh
 rm -f /root/wg.sh
 rm -f /root/ss.sh
@@ -506,6 +521,9 @@ echo "   - IPv6                    : [OFF]"  | tee -a log-install.txt
 echo "   - Autoreboot On 05.00 GMT +7" | tee -a log-install.txt
 echo "   - Autobackup Data" | tee -a log-install.txt
 echo "   - Restore Data" | tee -a log-install.txt
+echo "   - Add ID Cloudflare" | tee -a log-install.txt
+echo "   - Cloudflare Add-Ons" | tee -a log-install.txt
+echo "   - Pointing BUG" | tee -a log-install.txt
 echo "   - Auto Delete Expired Account" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
