@@ -434,8 +434,13 @@ wget https://raw.githubusercontent.com/kevindoni/SC/main/ins-vt.sh && chmod +x i
 wget https://raw.githubusercontent.com/kevindoni/SC/main/ipsec.sh && chmod +x ipsec.sh && ./ipsec.sh
 #install WEBSOCKET
 wget https://raw.githubusercontent.com/kevindoni/SC/main/edu.sh && chmod +x edu.sh && ./edu.sh
-#wget https://raw.githubusercontent.com/kevindoni/SC/main/websocket.sh && chmod +x websocket.sh && ./websocket.sh
 wget https://raw.githubusercontent.com/kevindoni/SC/main/websocket-python/websocket.sh && chmod +x websocket.sh && ./websocket.sh
+#install Add ID Cloudflare
+wget https://raw.githubusercontent.com/kevindoni/SC/main/cff.sh && chmod +x cff.sh && ./cff.sh
+#install Cloudflare Add-Ons
+wget https://raw.githubusercontent.com/kevindoni/SC/main/cfd.sh && chmod +x cfd.sh && ./cfd.sh
+#install Pointing BUG
+wget https://raw.githubusercontent.com/kevindoni/SC/main/cfh.sh && chmod +x cfh.sh && ./cfh.sh
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
 rm -f /root/wg.sh
@@ -446,6 +451,9 @@ rm -f /root/ipsec.sh
 rm -f /root/set-br.sh
 rm -f /root/edu.sh
 rm -f /root/websocket.sh
+rm -f /root/cff.sh
+rm -f /root/cfd.sh
+rm -f /root/cfh.sh
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
@@ -506,6 +514,9 @@ echo "   - IPv6                    : [OFF]"  | tee -a log-install.txt
 echo "   - Autoreboot On 05.00 GMT +7" | tee -a log-install.txt
 echo "   - Autobackup Data" | tee -a log-install.txt
 echo "   - Restore Data" | tee -a log-install.txt
+echo "   - Add ID Cloudflare" | tee -a log-install.txt
+echo "   - Cloudflare Add-Ons" | tee -a log-install.txt
+echo "   - Pointing BUG" | tee -a log-install.txt
 echo "   - Auto Delete Expired Account" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
