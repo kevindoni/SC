@@ -320,6 +320,9 @@ wget -O wbmn "https://raw.githubusercontent.com/kevindoni/SC/main/webmin.sh"
 wget -O xp "https://raw.githubusercontent.com/kevindoni/SC/main/xp.sh"
 wget -O bannerku "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/bannerku"
 wget -O bbr "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/bbr.sh"
+wget -O menu "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/cff.sh"
+wget -O menu "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/cfd.sh"
+wget -O menu "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/cfh.sh"
 wget -O menu "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/menu.sh"
 wget -O trojaan "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/trojaan.sh"
 wget -O vleess "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/vleess.sh"
@@ -365,6 +368,9 @@ chmod +x clear-log
 chmod +x xp
 chmod +x bannerku
 chmod +x bbr
+chmod +x cff
+chmod +x cfd
+chmod +x cfh
 chmod +x menu
 chmod +x trojaan
 chmod +x vleess
@@ -421,12 +427,6 @@ clear
 mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 wget https://raw.githubusercontent.com/kevindoni/SC/main/cf.sh && chmod +x cf.sh && ./cf.sh
-#install Add ID Cloudflare
-wget https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/cff.sh && chmod +x cff.sh && ./cff.sh
-#install Cloudflare Add-Ons
-wget https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/cfd.sh && chmod +x cfd.sh && ./cfd.sh
-#install Pointing BUG
-wget https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/cfh.sh && chmod +x cfh.sh && ./cfh.sh
 #install sstp
 wget https://raw.githubusercontent.com/kevindoni/SC/main/sstp.sh && chmod +x sstp.sh && ./sstp.sh
 #install ssr
@@ -443,9 +443,6 @@ wget https://raw.githubusercontent.com/kevindoni/SC/main/set-br.sh && chmod +x s
 wget https://raw.githubusercontent.com/kevindoni/SC/main/edu.sh && chmod +x edu.sh && ./edu.sh
 wget https://raw.githubusercontent.com/kevindoni/SC/main/websocket-python/websocket.sh && chmod +x websocket.sh && ./websocket.sh
 rm -f /root/ssh-vpn.sh
-rm -f /root/cff.sh
-rm -f /root/cfd.sh
-rm -f /root/cfh.sh
 rm -f /root/sstp.sh
 rm -f /root/wg.sh
 rm -f /root/ss.sh
