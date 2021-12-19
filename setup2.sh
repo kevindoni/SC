@@ -329,9 +329,6 @@ wget -O v2raay "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/v2r
 wget -O ssh "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/ssh.sh"
 wget -O sstpp "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/sstpp.sh"
 wget -O ssssr "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/ssssr.sh"
-wget -O cff "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/cff.sh"
-wget -O cfd "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/cfd.sh"
-wget -O cfh "https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/cfh.sh"
 wget -O backup "https://raw.githubusercontent.com/kevindoni/SC/main/backup.sh"
 wget -O autobackup "https://raw.githubusercontent.com/kevindoni/SC/main/autobackup.sh"
 wget -O rclone "https://raw.githubusercontent.com/kevindoni/SC/main/rclone.conf"
@@ -377,9 +374,6 @@ chmod +x v2raay
 chmod +x ssh
 chmod +x sstpp
 chmod +x ssssr
-chmod +x cff
-chmod +x cfd
-chmod +x cfh
 echo "0 5 * * * root clear-log && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 # remove unnecessary files
