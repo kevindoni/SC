@@ -52,10 +52,16 @@ echo -e   "   17\e[1;33m)\e[m  Information Display System"
 echo -e   "   18\e[1;33m)\e[m  Info Script Auto Install"
 echo -e   "   19\e[1;33m)\e[m  Install BBR"
 echo -e   "  \e[1;32m============================================================"| lolcat
+echo -e   "                          EXTRA MENU" | lolcat 
+echo -e   "  \e[1;32m============================================================"| lolcat
+echo -e   "   20\e[1;33m)\e[m  Add ID Cloudflare"
+echo -e   "   21\e[1;33m)\e[m  Cloudflare Add-Ons"
+echo -e   "   22\e[1;33m)\e[m  Pointing BUG"
+echo -e   "  \e[1;32m============================================================"| lolcat
 echo -e   "   x)   Exit" | lolcat
 echo -e   "  \e[1;32m============================================================"| lolcat
 echo -e   ""
-read -p "     Select From Options [1-19 or x] :  " menu
+read -p "     Select From Options [1-22 or x] :  " menu
 echo -e   ""
 case $menu in
 1)
@@ -116,9 +122,12 @@ about
 bbr
 ;;
 20)
-clear-log
+cff
 ;;
-25)
+21)
+cfd
+;;
+22)
 cfh
 ;;
 x)
