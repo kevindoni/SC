@@ -422,11 +422,11 @@ mkdir /var/lib/premium-script;
 echo "IP=" >> /var/lib/premium-script/ipvps.conf
 wget https://raw.githubusercontent.com/kevindoni/SC/main/cf.sh && chmod +x cf.sh && ./cf.sh
 #install Add ID Cloudflare
-wget https://raw.githubusercontent.com/kevindoni/SC/main/cff.sh && chmod +x cff.sh && ./cff.sh
+wget https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/cff.sh && chmod +x cff.sh && ./cff.sh
 #install Cloudflare Add-Ons
-wget https://raw.githubusercontent.com/kevindoni/SC/main/cfd.sh && chmod +x cfd.sh && ./cfd.sh
+wget https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/cfd.sh && chmod +x cfd.sh && ./cfd.sh
 #install Pointing BUG
-wget https://raw.githubusercontent.com/kevindoni/SC/main/cfh.sh && chmod +x cfh.sh && ./cfh.sh
+wget https://raw.githubusercontent.com/kevindoni/SC/main/menu-all/cfh.sh && chmod +x cfh.sh && ./cfh.sh
 #install sstp
 wget https://raw.githubusercontent.com/kevindoni/SC/main/sstp.sh && chmod +x sstp.sh && ./sstp.sh
 #install ssr
