@@ -27,10 +27,10 @@ cd
 mkdir /home/admin/
 cd
 cd /usr/local/bin/
-wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/${GitUser}/SC/main/${namafolder}/ws-openssh && chmod +x /home/admin/ws-openssh
-wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/${GitUser}/SC/main/${namafolder}/ws-dropbear && chmod +x /home/admin/bin/ws-dropbear
-wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/${GitUser}/SC/main/${namafolder}/ws-stunnel && chmod +x /home/admin/ws-stunnel
-wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/${GitUser}/SC/main/${namafolder}/ws-ovpn && chmod +x /home/admin/ws-ovpn
+wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/${GitUser}/SC/main/${namafolder}/ws-openssh && chmod +x /home/vps/ws-openssh
+wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/${GitUser}/SC/main/${namafolder}/ws-dropbear && chmod +x /home/vps/bin/ws-dropbear
+wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/${GitUser}/SC/main/${namafolder}/ws-stunnel && chmod +x /home/vps/ws-stunnel
+wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/${GitUser}/SC/main/${namafolder}/ws-ovpn && chmod +x /home/vps/ws-ovpn
 #
 chmod +x /usr/local/bin/ws-openssh
 chmod +x /usr/local/bin/ws-openssh
