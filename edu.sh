@@ -3,7 +3,7 @@
 # ====================================
 
 # Getting Proxy Template
-wget -q -O /usr/local/bin/edu-ssh https://raw.githubusercontent.com/aryprabow/sc/main/proxy-template.py
+wget -q -O /usr/local/bin/edu-ssh https://raw.githubusercontent.com/aryprabow/SC/main/proxy-template.py
 chmod +x /usr/local/bin/edu-ssh
 
 # Installing Service
